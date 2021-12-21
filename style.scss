@@ -12,8 +12,8 @@
 .top {
     padding-top: 216px;
     height: 1024px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(0001.jpg);
-    background-image: url("./img/Rectangle 1.jpg");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%);
+    background-image: url("./img/top_bcg.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -82,7 +82,7 @@
     &__game {
         width: 379px;
         height: 300px;
-        background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
+        background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%);
         border-radius: 16px;
         position: relative;
         transition: all 0.5s;
