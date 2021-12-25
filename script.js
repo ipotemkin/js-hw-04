@@ -10,25 +10,25 @@ function launchGameOne() {
             return;
         }
         
-        month = parseInt(month);
+        month = parseInt(month);  // переводим в int
         
-        if (month < 1 || month > 12 || isNaN(month)) {
-            alert("Неверный номер месяца");
-            continue;
-        }   
-        
-        if (month >= 3 && month <=5) {
-            season = "весна";
-        } else if (month >= 6 && month <=8) {
-            season = "лето";
-        } else if (month >= 9 && month <= 11) {
-            season = "осень";
+        if (month >= 1 && month <= 12) {
+            break;
         } else {
-            season = "зима";
+            alert("Неверный номер месяца");
         }
-        msg = `Вы ввели месяц ${month}, это ${season}`;        
-        console.log(msg);  // выводим в консоль
-        alert(msg);  // выводим на экран
-        break;
-    } 
+    }
+
+    if (month >= 3 && month <=5) {
+        season = "весна";
+    } else if (month >= 6 && month <=8) {
+        season = "лето";
+    } else if (month >= 9 && month <= 11) {
+        season = "осень";
+    } else {
+        season = "зима";
+    }
+    msg = `Вы ввели месяц ${month}, это ${season}`;        
+    console.log(msg);  // выводим в консоль
+    alert(msg);  // выводим на экран
 }
