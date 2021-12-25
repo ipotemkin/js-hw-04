@@ -115,4 +115,74 @@
     
 }
 
+
+.game-1 {
+    // padding-top: 216px;
+    height: 800px;
+    // background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%);
+    // background-image: url("./img/top_bcg.jpg");
+    // background-repeat: no-repeat;
+    // background-position: center bottom;
+    // background-size: cover;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    background: #000915;
+
+    &-box {
+        width: 584px; 
+        display: flex;
+        flex-direction: column;
+        gap: 32px;   
+    }
+    
+    &__heading {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 59px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+    }
+
+    &__sub-heading {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        /* or 178% */
+        
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;        
+    }
+    
+    &__btn-go {
+        width: 234.06px;
+        height: 48.6px;
+        
+        background: #9C0332;
+        border-radius: 30px;
+        border: none;
+    
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        
+        color: #FFFFFF;
+    
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+    &__pict {
+        width: 485px;
+    }
+}
+
 @import 'mobile.scss';

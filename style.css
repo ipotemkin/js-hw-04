@@ -122,6 +122,82 @@
   cursor: pointer;
 }
 
+.game-1 {
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #000915;
+}
+
+.game-1-box {
+  width: 584px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+.game-1__heading {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+}
+
+.game-1__sub-heading {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+}
+
+.game-1__btn-go {
+  width: 234.06px;
+  height: 48.6px;
+  background: #9C0332;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
+.game-1__btn-go:hover {
+  cursor: pointer;
+}
+
+.game-1__pict {
+  width: 485px;
+}
+
 @media (max-width: 1240px) {
   body {
     min-width: 375px;
@@ -195,6 +271,35 @@
   }
   .games-box__game-name {
     left: 14px;
+  }
+  .game-1 {
+    height: 654px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 64px;
+  }
+  .game-1-box {
+    width: 344px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .game-1__heading {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .game-1__sub-heading {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .game-1__pict {
+    width: 344px;
   }
 }
 
