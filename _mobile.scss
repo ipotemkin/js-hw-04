@@ -1,17 +1,14 @@
-// @media (max-width: 767px) {
-// to beautify the look
-  @media (max-width: 1240px) {
+@media (max-width: #{$widthTablet - 1}) {
     body {
-      min-width: 375px;
+      min-width: #{$widthMobile - 1};
   }
 
   .center {
-      padding-left: calc(50% - 188px);
-      padding-right: calc(50% - 188px);
+      padding-left: calc(50% - #{$widthMobile / 2});
+      padding-right: calc(50% - #{$widthMobile / 2});
     }
     
   .top {
-    width: 375px;
     height: 496px;
     background-image: none;
     background: #000915;
@@ -97,7 +94,7 @@
 
 
 // to beautify the look
-@media (max-width: 375px) {
+@media (max-width: #{$widthMobile - 1}) {
   .center {
     padding-left: 0;
     padding-right: 0;
