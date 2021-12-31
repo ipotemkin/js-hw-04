@@ -63,7 +63,8 @@
     }
   }
 
-  .game-1 {
+  .game-1,
+  .game-2 {
     height: 654px;
     flex-direction: column;
     justify-content: center;
@@ -89,7 +90,10 @@
       width: 344px; 
     }
   }
-
+  
+  .game-2 {
+    flex-direction: column-reverse;
+  }
 }
 
 
