@@ -1,4 +1,3 @@
-
 function launchGameOne() {
     let season = "";
     let month = 0;
@@ -56,6 +55,7 @@ let seasons = {
     4: "осень"
 };
 
+// Game 1
 function launchGameOne_2() {    
     let month = "";
     while (true) {
@@ -101,10 +101,9 @@ function launchGameTwo() {
     } while (secondWordIndex === firstWordIndex);
 
     firstElement = newArr[firstWordIndex - 1].toLowerCase();
-    lastElement = newArr[secondWordIndex - 1].toLowerCase()
+    lastElement = newArr[secondWordIndex - 1].toLowerCase();
 
     alert(`Запомните список:\n${newArr.join(", ")}`)
-    // alert(`Попробуйте угадать, чему равнялся первый и последний элемент массива`);
     userFirstElement = prompt(`Введите слово ${firstWordIndex} из списка`).trim().toLowerCase();
     userLastElement = prompt(`Введите слово ${secondWordIndex} из списка`).trim().toLowerCase();
 
@@ -115,5 +114,4 @@ function launchGameTwo() {
     } else {
         alert("К сожалению, вы не угадали");    
     }
-
 }
