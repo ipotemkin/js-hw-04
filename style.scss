@@ -188,5 +188,9 @@
     }
 }
 
+.game-2 {
+    flex-direction: row-reverse;
+}
+
 @import 'tablet';
 @import 'mobile';

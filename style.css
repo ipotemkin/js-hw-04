@@ -205,6 +205,13 @@
   width: 485px;
 }
 
+.game-2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 @media (max-width: 1200px) {
   .center {
     padding-left: calc(50% - 384px);
@@ -344,12 +351,6 @@
   .game-1__pict,
   .game-2__pict {
     width: 344px;
-  }
-  .game-2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
   }
 }
 
