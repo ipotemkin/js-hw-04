@@ -92,20 +92,33 @@ function getRandomIndex(n) {
 function launchGameTwo() {
     let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 
-    newArr = arr.sort(() => Math.random() - 0.5);
-    arrLength = newArr.length;
+    let newArr = arr.sort(() => Math.random() - 0.5);
+    let arrLength = newArr.length;
 
-    firstWordIndex = getRandomIndex(arrLength);
+    let firstWordIndex = getRandomIndex(arrLength);
+    let secondWordIndex;
     do {
         secondWordIndex = getRandomIndex(arrLength);
     } while (secondWordIndex === firstWordIndex);
 
-    firstElement = newArr[firstWordIndex - 1].toLowerCase();
-    lastElement = newArr[secondWordIndex - 1].toLowerCase();
+    let firstElement = newArr[firstWordIndex - 1].toLowerCase();
+    let lastElement = newArr[secondWordIndex - 1].toLowerCase();
 
     alert(`Запомните список:\n${newArr.join(", ")}`);
-    userFirstElement = prompt(`Введите слово ${firstWordIndex} из списка`).trim().toLowerCase();
-    userLastElement = prompt(`Введите слово ${secondWordIndex} из списка`).trim().toLowerCase();
+    
+    let userFirstElement = "";
+    do {
+        userFirstElement = prompt(`Введите слово ${firstWordIndex} из списка`);
+        if (userFirstElement === null) { return; }
+    } while (userFirstElement === "")
+    userFirstElement = userFirstElement.trim().toLowerCase();
+
+    let userLastElement = "";
+    do {
+        userLastElement = prompt(`Введите слово ${secondWordIndex} из списка`);
+        if (userLastElement === null) { return; }
+    } while (userLastElement === "")
+    userLastElement = userLastElement.trim().toLowerCase();
 
     if ((userFirstElement === firstElement) && (userLastElement === lastElement)) {
         alert("Поздравляю, Вы угадали!!!");
