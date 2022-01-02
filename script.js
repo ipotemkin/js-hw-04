@@ -66,7 +66,7 @@ function launchGameOne_2() {
             return;
         }
         
-        month = month.trim()  // убираем начальные и конечные пробелы
+        month = month.trim();  // убираем начальные и конечные пробелы
         if (month in months) {
             break;
         } else if (month == "") {
@@ -85,7 +85,7 @@ function launchGameOne_2() {
 
 
 function getRandomIndex(n) {
-    return Math.floor(Math.random() * n) + 1
+    return Math.floor(Math.random() * n) + 1;
 }
 
 // Game 2
@@ -103,7 +103,7 @@ function launchGameTwo() {
     firstElement = newArr[firstWordIndex - 1].toLowerCase();
     lastElement = newArr[secondWordIndex - 1].toLowerCase();
 
-    alert(`Запомните список:\n${newArr.join(", ")}`)
+    alert(`Запомните список:\n${newArr.join(", ")}`);
     userFirstElement = prompt(`Введите слово ${firstWordIndex} из списка`).trim().toLowerCase();
     userLastElement = prompt(`Введите слово ${secondWordIndex} из списка`).trim().toLowerCase();
 
