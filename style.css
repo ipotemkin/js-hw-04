@@ -122,7 +122,8 @@
 }
 
 .game-1,
-.game-2 {
+.game-2,
+.game-3 {
   height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,7 +140,8 @@
 }
 
 .game-1-box,
-.game-2-box {
+.game-2-box,
+.game-3-box {
   width: 584px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,7 +154,8 @@
 }
 
 .game-1__heading,
-.game-2__heading {
+.game-2__heading,
+.game-3__heading {
   font-weight: bold;
   font-size: 48px;
   line-height: 59px;
@@ -167,7 +170,8 @@
 }
 
 .game-1__sub-heading,
-.game-2__sub-heading {
+.game-2__sub-heading,
+.game-3__sub-heading {
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
@@ -182,7 +186,8 @@
 }
 
 .game-1__btn-go,
-.game-2__btn-go {
+.game-2__btn-go,
+.game-3__btn-go {
   width: 234.06px;
   height: 48.6px;
   background: #9C0332;
@@ -195,12 +200,14 @@
 }
 
 .game-1__btn-go:hover,
-.game-2__btn-go:hover {
+.game-2__btn-go:hover,
+.game-3__btn-go:hover {
   cursor: pointer;
 }
 
 .game-1__pict,
-.game-2__pict {
+.game-2__pict,
+.game-3__pict {
   width: 485px;
 }
 
@@ -209,6 +216,36 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.game-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000915), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, left bottom, color-stop(-7.35%, rgba(0, 0, 0, 0)), to(#000915)), url(.jpg), #000915;
+  background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(.jpg), #000915;
+  background-image: url("./img/game_3_bkg.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.game-3-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.bottom {
+  height: 80px;
+  background: #000915;
 }
 
 @media (max-width: 1200px) {

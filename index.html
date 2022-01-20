@@ -47,14 +47,16 @@
                 <p class="games-box__game-name">Игра 2</p>  
             </div>        
         </a>
-        <div class="games-box__game">
-            <picture>
-                <source media="(max-width: 1200px)" srcset="./img/game_3_mobile.png">
-                <source media="(min-width: 1201px)" srcset="./img/game_3.png">
-                <img src="./img/game_3.png" alt="Игра 3">
-            </picture>
-            <p class="games-box__game-name">Игра 3</p>  
-        </div>    
+        <a href="#game3">
+            <div class="games-box__game">
+                <picture>
+                    <source media="(max-width: 1200px)" srcset="./img/game_3_mobile.png">
+                    <source media="(min-width: 1201px)" srcset="./img/game_3.png">
+                    <img src="./img/game_3.png" alt="Игра 3">
+                </picture>
+                <p class="games-box__game-name">Игра 3</p>  
+            </div>        
+        </a>
     </div>
     <section class="game-1 center" id="game1">
         <div class="game-1-box">
@@ -80,6 +82,19 @@
         </div>
         <img class="game-2__pict" src="./img/game_2.svg" alt="Игра 2">
     </section>
+    <section class="game-3 center" id="game3">
+        <div class="game-3-box">
+            <h2 class="game-3__heading">Игра в загадки</h2>
+            <div class="game-3__sub-heading">
+                <div class="game-3__sub-heading__text">
+                    Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.
+                </div>
+            </div>
+            <button onclick="launchGameTwo()" class="game-3__btn-go" type="submit">Играть!</button>        
+        </div>
+    </section>
+    <div class="bottom">
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

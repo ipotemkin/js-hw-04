@@ -117,7 +117,8 @@
 
 
 .game-1,
-.game-2 {
+.game-2,
+.game-3 {
     height: 800px;
     display: flex;
     align-items: center;
@@ -182,6 +183,37 @@
 
 .game-2 {
     flex-direction: row-reverse;
+}
+
+.game-3 {
+    // width: 1440px;
+    // height: 800px;
+    // // left: 0px;
+    // top: 3180px;
+    
+    background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(.jpg), #000915;    
+    background-image: url("./img/game_3_bkg.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+    
+    &-box {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        gap: 32px;   
+        align-items: center;
+        text-align: center;
+    }
+
+
+}
+
+.bottom {
+    height: 80px;
+    
+    background: #000915;    
 }
 
 @import 'tablet';
