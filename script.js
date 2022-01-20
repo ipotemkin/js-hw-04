@@ -128,3 +128,57 @@ function launchGameTwo() {
         alert("К сожалению, вы не угадали");    
     }
 }
+
+
+// Game 3
+function launchGameThree() {
+    const questions = [
+        {
+            question: "Зимой и летом одним цветом",
+            answer: ["ель", "елка", "ёлка"],
+            hints: ["она зеленая", "это растение"],
+        },
+        {
+            question: "Сто одежек и все без застежек",
+            answer: ["лук"],
+            hints: ["это он", "это растение"],
+        },
+        {
+            question: "Не лает, не кусается, и точно так же называется",
+            answer: ["@"],
+            hints: ["это символ", "встречается в адресе электронной почты"],
+        },
+        {
+            question: "Оно всегда перед нами, но видеть его мы не можем. Что это?",
+            answer: ["будущее"],
+            hints: ["это абстрактное понятие", "это то, чего еще нет"],
+        },
+        {
+            question: "Какой конь не ест овса?",
+            answer: ["шахматный"],
+            hints: ["этот конь не настоящий", "он не ходит по прямой"],
+        },
+    ]
+
+    function checkAnswer(question, answer_) {
+            for (let i in question.answer) {
+            if (question.answer[i].toLowerCase() === answer_.toLowerCase()) return true;
+        }
+        return false;
+    }
+    
+    function getHint(question, hintIndex) {
+        return question.hints[hintIndex];
+    }
+        
+    let questionIndex = Math.floor(Math.random() * questions.length);
+ 
+    for (let counter = 2; counter >= 0; counter--) {
+        let userAnswer = prompt(questions[questionIndex].question);
+        if (checkAnswer(questions[questionIndex], userAnswer)) return alert("Верно");
+        else if (counter > 0) {
+            let hint = getHint(questions[questionIndex], counter - 1);
+            alert(`Неверно.\nУ Вас еще ${counter} попыток.\nПодсказка: ${hint}`);
+        } else return alert("Вы не угадали");            
+    }
+}
