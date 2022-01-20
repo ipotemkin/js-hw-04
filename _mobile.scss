@@ -10,8 +10,8 @@
     
   .top {
     height: 496px;
-    background-image: none;
-    background: #000915;
+    // background-image: none;
+    // background: #000915;
     background-image: url("./img/top_bcg_mobile.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -90,7 +90,33 @@
       width: 344px; 
     }
   }
+
   
+  .game-3 {
+    height: 800px;
+    align-items: start;
+    background-image: url("./img/game_3_bkg_mobile.jpg");
+
+    &__heading {
+      margin-top: 52px;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 39px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+
+      color: #FFFFFF;
+    }
+    
+    &__sub-heading {
+      width: 343px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+  }
 }
 
 

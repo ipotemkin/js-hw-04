@@ -245,7 +245,26 @@
 
 .bottom {
   height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #000915;
+}
+
+.bottom__text {
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
 }
 
 @media (max-width: 1200px) {
@@ -291,8 +310,6 @@
   }
   .top {
     height: 496px;
-    background-image: none;
-    background: #000915;
     background-image: url("./img/top_bcg_mobile.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -387,6 +404,32 @@
   .game-1__pict,
   .game-2__pict {
     width: 344px;
+  }
+  .game-3 {
+    height: 800px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    background-image: url("./img/game_3_bkg_mobile.jpg");
+  }
+  .game-3__heading {
+    margin-top: 52px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FFFFFF;
+  }
+  .game-3__sub-heading {
+    width: 343px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 

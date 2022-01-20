@@ -212,8 +212,20 @@
 
 .bottom {
     height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    background: #000915;    
+    background: #000915;
+    
+    &__text {
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */        
+        align-items: center;
+        
+        color: #FFFFFF;
+    }
 }
 
 @import 'tablet';
